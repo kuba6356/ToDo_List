@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="content">
+        <div id="ToDoList">
+            <div id="today" class="ToDoProject">Today</div>
+            <div id="ThisWeek" class="ToDoProject">This Week</div>
+            <div id="ThisMonth" class="ToDoProject">This Month</div>
+            <div id="Projects" class="ToDoProject">
+                <div id="ProjectName1" class="ToDoProject"></div>
+            </div>
+        </div>
+        <div id="ToDoContent">
+            <!--Varies depending on chosen option from ToDolist
+                This section is for ID "Today" -->
+            <div id="Today">
+                <div id="Today_Title" class="ListTitle">Today</div>
+                <div id="Today_Date" class="Date">YYYY-MM-DD</div>
+            </div>
+            <div id="TodayList" class="DayList">
+                <div id="ProjectName1" class="ListProject">
+                    <div class="UpperProject">
+                        <div id="ProjectName1_Title" class="ProjectTitle">ProjectName1</div>
+                        <div class="ProejctBasicInfo">
+                            <div id="ProjectName1_TimeLeft" class="ProjectTimeLeft"> 13:40 hours</div>
+                            <div id="ProjectName1_Status" class="ProjectStatus" class="completed">Completed 100%</div> <!-- there will be 3 project statuses "Completed", "Working" 
+                                and "haven't Started" this and the % will be updated depending on checkmark status in ProjectTasks also the date will appear under the project name-->
+                                <!--<div id="YYYY-MM-DD_Title" class="ListTitle">
+                                    <div id="YYYY-MM-DD_Title" class="ListTitle">NameDay</div>
+                                    <div id="YYYY-MM-DD_Date" class="Date">YYYY-MM-DD</div> 
+                                </div> 
+                                    <div id="YYYY-MM-DD_List" class="DayList"> -->
+
+                        </div>
+                    </div>
+                    <button class="ProjectMore">More Info</button>
+                    <!--button generate the Project layout and you could go back using the back button (task layout is at the end of ToDoContent section-->
+                </div>
+            </div>
+            <!--This section is for  ID "This week"-->  
+            <div id="ThisWeek">
+                <div id="ThisWeekList" class="ListTitle">This Week</div>
+                <div id="ThisWeekDate" class="Date">YYYY-MM-DD</div>
+            </div>
+            <div id="ThisWeekList">
+                <div id="Monday" class="ThisWeekDay">
+                    <div>
+                        <div id="YYYY-MM-DD_Title" class="ListTitle">NameDay</div>
+                        <div id="YYYY-MM-DD_Date" class="WeekDate">DD/MM - DD/MM</div>
+                    </div>
+                    <div id="YYYY-MM-DD_List" class="DayList">
+                    <!--The rest is just like in Today section but the width is shorter you can also go into a day and the section changes to today with 
+                        diffrent name depending on the chosen day-->
+                    </div>
+                </div>
+                <!--Generate week days monday - sunday as per example-->
+                <!-- Upon clicking showmore the layout changes to the Task layout and you can go back using back button -->
+            </div>
+            <!-- Add a functionality that will make you choose day from a calender that will show up upon clicking this -->
+            <!-- This section is for ID "This Month" -->
+            <div id="ThisMonth">
+                <div id="ThisMonthList" class="ListTitle">This Month</div>
+                <div id="ThisWeekDate" class="MonthDate">MM/div>
+            </div>
+            <div id="ThisMonthList">
+                    <div id="YYYY-MM-DD_List" class="MotnhDayList">
+                        <div id="YYYY-MM-DD_Day" class="MonthDay">01</div>
+                        <div id="ProjectName1" class="MonthProject">ProjectName1</div>
+                        <div id="ProjectName2" class="MonthProject">ProjectName2</div>
+                        <div id="ProjectName3" class="MonthProject">ProjectName3</div>
+                        <button class="MonthDayShowMore">...</button>
+                        <!-- Max 3 projects show up in each day if 4 or more that day show 3 dots button that shows the day sectioon same as in the week section -->
+                        <!-- Generate days depending on current month -->
+                    </div>
+                </div>
+            </div>
+            
+            <!-- This section is for ID "${projectname}" -->
+            <div class="ListTitle" id="ProjectName1">ProjectName1</div>
+            <div id="ProjectName1" class="ProjectLayout">
+                <div id="ProjectName1" class="ListProject">
+                    <div class="UpperProject">
+                        <div id="ProjectName1_Title" class="ProjectTitle">ProjectName1</div>
+                        <div class="ProejctBasicInfo">
+                            <div id="ProjectName1_TimeLeft" class="ProjectTimeLeft"> 13:40 hours</div>
+                            <div id="ProjectName1_Status" class="ProjectStatus" class="completed">Completed 100%</div>
+                        </div>
+                    </div>
+                    <div class="LowerProject">
+                        <div class="ProjectDescription" id="ProjectName1_Description">lorem ipsum bla bla bla</div>
+                        <div class="ProjectTasks" id="ProjectName1_Tasks">
+                            <div class="Task" id="task_Change_the_website">
+                                <label for="change_the_website" class="ProjectTaskInfo">change the website</label>
+                                <input type="checkbox" name="change_the_website" id="change_the_website">
+                            </div>
+                            <div class="Task" id="task_Change_the_website">
+                                <label for="change_the_website" class="ProjectTaskInfo">change the website</label>
+                                <input type="checkbox" name="change_the_website" id="change_the_website">
+                            </div>
+                            <div class="Task" id="task_Change_the_website">
+                                <label for="change_the_website" class="ProjectTaskInfo">change the website</label>
+                                <input type="checkbox" name="change_the_website" id="change_the_website">
+                            </div>
+                            <div class="Task" id="task_Change_the_website">
+                                <label for="change_the_website" class="ProjectTaskInfo">change the website</label>
+                                <input type="checkbox" name="change_the_website" id="change_the_website">
+                            </div>
+                        </div>
+                        <div class="ProjectPriority"></div>
+                        <div class="ProjectButtons">
+                            <button id="DeleteProject">Delete</button>
+                            <button id="EditProject">Edit</button>
+                        </div>
+                        <button class="ProjectBack">Go Back</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
