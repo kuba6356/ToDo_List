@@ -3,22 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="MyApp.js" defer></script>
+    <link rel="stylesheet" href="BasicStyle.css">
     <title>Document</title>
 </head>
 <body>
+    <div>
+        
+    </div>
     <div id="content">
         <div id="ToDoList">
-            <div id="today" class="ToDoProject">Today</div>
-            <div id="ThisWeek" class="ToDoProject">This Week</div>
-            <div id="ThisMonth" class="ToDoProject">This Month</div>
-            <div id="Projects" class="ToDoProject">
-                <div id="ProjectName1" class="ToDoProject"></div>
+            <div id="NormalNavigation">
+                <div id="today" class="ToDoProject">Today</div>
+                <div id="ThisWeek" class="ToDoProject">This Week</div>
+                <div id="ThisMonth" class="ToDoProject">This Month</div>
+            </div>
+            <div id="Projects">
+                <div id="Projectsname" >Projects</div>
+                <div id="AddedProjects">
+                    <div id="ProjectName1" class="ToDoProject">ProjectName1</div>
+                    <div id="ProjectName1" class="ToDoProject">ProjectName1</div>
+                    <div id="ProjectName1" class="ToDoProject">ProjectName1</div>
+                    <div id="ProjectName1" class="ToDoProject">ProjectName1</div>
+                    <div id="ProjectName1" class="ToDoProject">ProjectName1</div>
+                    <div id="ProjectName1" class="ToDoProject">ProjectName1</div>
+                </div>
+                <button id="AddProject">New Project</button>
             </div>
         </div>
         <div id="ToDoContent">
             <!--Varies depending on chosen option from ToDolist
                 This section is for ID "Today" -->
-            <div id="Today">
+            <div id="Today_TitleDiv">
                 <div id="Today_Title" class="ListTitle">Today</div>
                 <div id="Today_Date" class="Date">YYYY-MM-DD</div>
             </div>
@@ -43,7 +59,7 @@
                 </div>
             </div>
             <!--This section is for  ID "This week"-->  
-            <div id="ThisWeek">
+            <!-- <div id="ThisWeek">
                 <div id="ThisWeekList" class="ListTitle">This Week</div>
                 <div id="ThisWeekDate" class="Date">YYYY-MM-DD</div>
             </div>
@@ -54,15 +70,15 @@
                         <div id="YYYY-MM-DD_Date" class="WeekDate">DD/MM - DD/MM</div>
                     </div>
                     <div id="YYYY-MM-DD_List" class="DayList">
-                    <!--The rest is just like in Today section but the width is shorter you can also go into a day and the section changes to today with 
-                        diffrent name depending on the chosen day-->
+                    The rest is just like in Today section but the width is shorter you can also go into a day and the section changes to today with 
+                        diffrent name depending on the chosen day
                     </div>
                 </div>
-                <!--Generate week days monday - sunday as per example-->
-                <!-- Upon clicking showmore the layout changes to the Task layout and you can go back using back button -->
-            </div>
-            <!-- Add a functionality that will make you choose day from a calender that will show up upon clicking this -->
-            <!-- This section is for ID "This Month" -->
+                Generate week days monday - sunday as per example
+                Upon clicking showmore the layout changes to the Task layout and you can go back using back button
+            </div> -->
+            <!-- Add a functionality that will make you choose day from a calender that will show up upon clicking this
+            This section is for ID "This Month"
             <div id="ThisMonth">
                 <div id="ThisMonthList" class="ListTitle">This Month</div>
                 <div id="ThisWeekDate" class="MonthDate">MM/div>
@@ -74,13 +90,12 @@
                         <div id="ProjectName2" class="MonthProject">ProjectName2</div>
                         <div id="ProjectName3" class="MonthProject">ProjectName3</div>
                         <button class="MonthDayShowMore">...</button>
-                        <!-- Max 3 projects show up in each day if 4 or more that day show 3 dots button that shows the day sectioon same as in the week section -->
-                        <!-- Generate days depending on current month -->
+                        Max 3 projects show up in each day if 4 or more that day show 3 dots button that shows the day sectioon same as in the week section
+                        Generate days depending on current month
                     </div>
                 </div>
-            </div>
-            
-            <!-- This section is for ID "${projectname}" -->
+            </div> -->
+            <!-- This section is for ID "${projectname}"
             <div class="ListTitle" id="ProjectName1">ProjectName1</div>
             <div id="ProjectName1" class="ProjectLayout">
                 <div id="ProjectName1" class="ListProject">
@@ -119,7 +134,7 @@
                         <button class="ProjectBack">Go Back</button>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
 </body>
